@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="mystyle.css">
+<body>
+<div class="ok">
+    <p id="data1"></p>
+    <button type="button" onclick="rich()"> ấn vào để giàu to </button>
+</div>
+</body>
+</html>
+<script>
+    function rich(){
+        let data1 =  Math.floor(Math.random() * 16) + 3
+        let tai = " tai "
+        let xiu = " xiu "
+        if(data1 >=11){
+            document.getElementById("data1").innerHTML = tai;
+        }else {
+            document.getElementById("data1").innerHTML = xiu;
+        }
+    }
+</script>
